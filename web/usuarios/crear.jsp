@@ -22,13 +22,15 @@
                         <span class="icon-bar"></span>
                         <span class="icon-bar"></span>
                     </button>
-                    <a class="navbar-brand" href="#">Project name</a>
+                     <a class="navbar-brand" href="#">PELISPEDIA</a>
                 </div>
                 <div id="navbar" class="collapse navbar-collapse">
-                    <ul class="nav navbar-nav">
-                        <li class="active"><a href="#">Home</a></li>
-                        <li><a href="#about">About</a></li>
-                        <li><a href="#contact">Contact</a></li>
+                     <ul class="nav navbar-nav">
+                        <li  class="active"><a href="../index_1.jsp">Home</a></li>
+                        <li><a href="index.jsp">Usuarios</a></li>
+                        <li><a href="../directores/index.jsp">Directores</a></li>
+                        <li><a href="../nacionalidades/index.jsp">Nacionalidades</a></li>
+                        <li><a href="../peliculas/index.jsp">Peliculas</a></li>
                     </ul>
                 </div><!--/.nav-collapse -->
             </div>
@@ -52,7 +54,7 @@
                             </div>
                             <div class="form-group">
                                 <label for="nombre">Fecha de Nacimiento</label>
-                                <input type="text" class="form-control" name="fecha_nacimiento" id="nombre" placeholder="Fecha de Nacimiento">
+                                <input type="date" class="form-control" name="fecha_nacimiento" id="nombre" placeholder="Fecha de Nacimiento">
                             </div>
                             
 

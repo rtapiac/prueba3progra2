@@ -20,15 +20,15 @@
                         <span class="icon-bar"></span>
                         <span class="icon-bar"></span>
                     </button>
-                    <a class="navbar-brand" href="#">Project name</a>
+                     <a class="navbar-brand" href="">PELISPEDIA</a>
                 </div>
                 <div id="navbar" class="collapse navbar-collapse">
                     <ul class="nav navbar-nav">
-                        <li  class="active"><a href="index.jsp">Home</a></li>
-                        <li><a href="usuarios/index">Usuarios</a></li>
-                        <li><a href="directores/index.jsp">Directores</a></li>
-                        <li><a href="nacionalidades/index.jsp">Nacionalidades</a></li>
-                        <li><a href="peliculas/index.jsp">Peliculas</a></li>
+                        <li  class="active"><a href="login_out.jsp">Home</a></li>
+                        <li><a href="login_out.jsp">Usuarios</a></li>
+                        <li><a href="login_out.jsp">Directores</a></li>
+                        <li><a href="login_out.jsp">Nacionalidades</a></li>
+                        <li><a href="login_out.jsp">Peliculas</a></li>
                     </ul>
                 </div><!--/.nav-collapse -->
             </div>
@@ -41,7 +41,7 @@
                         <h3 class="panel-title">Menu Principal</h3>
                     </div>
                     <div class="panel-body">
-                        <h2>Bienvenidos a Disfrutar de las Mejores Películas</h2>
+                        <h2>Bienvenidos al Mejor Registro de Películas</h2>
                         <hr>
                         <br>
                         <form action="login.jsp" method="post">
@@ -52,8 +52,9 @@
                                 <tr>
                                     <td>Password:</td><td><input type="password" name="password" /></td>
                                 </tr>
-                                <input type="submit" />                      
+                                                    
                             </table>
+                            <input type="submit">  
                         </form>
 
                     </div>

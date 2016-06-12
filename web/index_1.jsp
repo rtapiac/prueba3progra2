@@ -21,12 +21,12 @@
                         <span class="icon-bar"></span>
                         <span class="icon-bar"></span>
                     </button>
-                    <a class="navbar-brand" href="#">Project name</a>
+                     <a class="navbar-brand" href="#">PELISPEDIA</a>
                 </div>
                 <div id="navbar" class="collapse navbar-collapse">
                     <ul class="nav navbar-nav">
-                        <li  class="active"><a href="index.jsp">Home</a></li>
-                        <li><a href="usuarios/index">Usuarios</a></li>
+                        <li  class="active"><a href="index_1.jsp">Home</a></li>
+                        <li><a href="usuarios/index.jsp">Usuarios</a></li>
                         <li><a href="directores/index.jsp">Directores</a></li>
                         <li><a href="nacionalidades/index.jsp">Nacionalidades</a></li>
                         <li><a href="peliculas/index.jsp">Peliculas</a></li>

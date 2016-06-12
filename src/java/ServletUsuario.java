@@ -43,15 +43,14 @@ public class ServletUsuario extends HttpServlet {
                 response.sendRedirect("usuarios/index.jsp");
             }
             // EN CASO DE QUE NO SE ELIMINE NI SE ACTUALICE SE GUARDA
-            else {
+            else if(request.getParameter("guardar")!=null) {
+                
+                out.println("USTED DESEA GUARDAR!!");
                 String nombre_usuario = request.getParameter("nombre_usuario");
                 String clave = request.getParameter("clave");
-                String estado = request.getParameter("estado");
                 String fecha_nacimiento =  request.getParameter("fecha_nacimiento");
-                
                 usuario.setNombre_usuario(nombre_usuario);
                 usuario.setClave(clave);
-                usuario.setEstado(estado);
                 usuario.setFecha_nacimiento(fecha_nacimiento);
                 usuario.crear();
                 response.sendRedirect("usuarios/index.jsp");

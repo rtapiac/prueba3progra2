@@ -7,10 +7,7 @@ package negocio;
 
 import accesodato.Coneccion;
 
-/**
- *
- * @author ricardotoledo
- */
+
 public class Usuario {
     
     //SE CREA LA CAPA DE NEGOCIO USUARIO CON TODOS LOS CAMPOS DE LA TABLA Y SUS METODOS SET Y GET
@@ -71,7 +68,7 @@ Coneccion con;
     
     //SE CREAR EL METODO CREAR PARA HACER UN INSERT UTILIZANDO LOS METODOS GET DE LA CLASE
     public void crear(){
-       con.setInsertar("insert into Usuarios(nombre_usuario,clave,estado,fecha_nacimiento) values('"+this.getNombre_usuario()+"','"+this.getClave()+"','"+this.getEstado()+"','"+this.getFecha_nacimiento()+"','activo')");
+       con.setInsertar("insert into Usuarios(nombre_usuario,clave,estado,fecha_nacimiento) values('"+this.getNombre_usuario()+"','"+this.getClave()+"','activo','"+this.getFecha_nacimiento()+"')");
     }
     //SE CREAR EL METODO ELIMINAR PARA HACER UN INSERT UTILIZANDO LOS METODOS GET DE LA CLASE
     public void eliminar(){

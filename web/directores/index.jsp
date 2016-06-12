@@ -29,10 +29,10 @@
                      <a class="navbar-brand" href="">PELISPEDIA</a>
                 </div>
                 <div id="navbar" class="collapse navbar-collapse">
-                    <ul class="nav navbar-nav">
+                     <ul class="nav navbar-nav">
                         <li  class="active"><a href="../index_1.jsp">Home</a></li>
-                        <li><a href="index.jsp">Usuarios</a></li>
-                        <li><a href="../directores/index.jsp">Directores</a></li>
+                        <li><a href="../usuarios/index.jsp">Usuarios</a></li>
+                        <li><a href="index.jsp">Directores</a></li>
                         <li><a href="../nacionalidades/index.jsp">Nacionalidades</a></li>
                         <li><a href="../peliculas/index.jsp">Peliculas</a></li>
                     </ul>
@@ -44,28 +44,30 @@
             <div class="row">
                 <div class="panel panel-primary">
                     <div class="panel-heading">
-                        <h3 class="panel-title">Listar Usuarios</h3>
+                        <h3 class="panel-title">Listar Directores</h3>
                     </div>
                     <div class="panel-body">
-                        <a href="crear.jsp" class="btn btn-primary">NUEVO USUARIO</a>
+                        <a href="crear.jsp" class="btn btn-primary">NUEVO DIRECTOR</a>
                         <br><br>
                         <table class="table table-condensed table-hover table-bordered">
                             <thead>
                                 <th>ID</th>
                                 <th>NOMBRE</th>
-                                <th>CLAVE</th>
+                                <th>APELLIDO PATERNO</th>
+                                <th>APELLIDO MATERNO</th>
                                 <th>ESTADO</th>
-                                <th>FECHA_NAC</th>
+                                <th>FECHA NACIMIENTO</th>
                             </thead>
                             <tbody>
                                 <%
                                    Coneccion con=new Coneccion();
-                                   con.setConsulta("select * from usuarios where estado='activo'");
+                                   con.setConsulta("select * from directores where estado='activo'");
                                    while(con.getResultado().next()){
                                     out.println("<tr>");
-                                       out.println("<td>"+con.getResultado().getString("usuario_id")+"</td>");
-                                       out.println("<td>"+con.getResultado().getString("nombre_usuario")+"</td>");
-                                       out.println("<td>"+con.getResultado().getString("clave")+"</td>");
+                                       out.println("<td>"+con.getResultado().getString("director_id")+"</td>");
+                                       out.println("<td>"+con.getResultado().getString("nombre_director")+"</td>");
+                                       out.println("<td>"+con.getResultado().getString("apepat")+"</td>");
+                                       out.println("<td>"+con.getResultado().getString("apemat")+"</td>");
                                        out.println("<td>"+con.getResultado().getString("estado")+"</td>");
                                        out.println("<td>"+con.getResultado().getString("fecha_nacimiento")+"</td>");
                                     out.println("</tr>");
