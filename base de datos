@@ -1,0 +1,30 @@
+Para el ingreso a la pagina web, debe ingresar con usuario "bastian" y clave "123"
+para el ingreso a la base de datos esta sin clave con usuario "root" 
+la base de datos de llama peliculas y a continuacion describo las tablas:
+
+describe usuarios;
+ usuario_id       | int(10)     | NO   | PRI | NULL    | auto_increment
+ nombre_usuario   | varchar(25) | YES  |     | NULL    |
+ clave            | varchar(25) | YES  |     | NULL    |
+ estado           | varchar(25) | YES  |     | NULL    |
+ fecha_nacimiento | datetime(6) | YES  |     | NULL    |
+ 
+ describe nacionalidades;
+  nacionalidad_id     | int(10)     | NO   | PRI | NULL    | auto_increment
+ nombre_nacionalidad | varchar(25) | YES  |     | NULL    |
+ estado              | varchar(25) | YES  |     | NULL    |
+ 
+ describe directores;
+  director_id      | int(10)     | NO   | PRI | NULL    | auto_increment
+ nombre_director  | varchar(25) | YES  |     | NULL    |
+ apepat           | varchar(25) | YES  |     | NULL    |
+ apemat           | varchar(25) | YES  |     | NULL    |
+ estado           | varchar(25) | YES  |     | NULL    |
+ fecha_nacimiento | datetime(6) | YES  |     | NULL    |
+ 
+ describe peliculas;
+  pelicula_id   | int(10)     | NO   | PRI | NULL    | auto_increment
+ fecha_estreno | datetime(6) | YES  |     | NULL    |
+ duracion      | varchar(25) | YES  |     | NULL    |
+ titulo        | varchar(25) | YES  |     | NULL    |
+ estado        | varchar(25) | YES  |     | NULL    |
